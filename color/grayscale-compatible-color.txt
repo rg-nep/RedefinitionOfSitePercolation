@@ -1,0 +1,11 @@
+rgb -> grey scale (black=1, white=0) by eye
+
+black -> 1.0
+red -> 0.9
+limegreen -> 0.5
+gold -> 0.4
+greenyellow -> 0.3
+
+
+
+
