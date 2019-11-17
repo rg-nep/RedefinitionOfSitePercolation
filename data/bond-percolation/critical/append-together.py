@@ -27,10 +27,20 @@ def for_a_single_length(length):
 		with open(file) as f:
 			line = f.readline()
 			print(line)
-			print(line.split(','))
-			head = json.loads(line[1:])
+			lst = line[1:].split(',')
+			print(lst)
+			line_n = ""
+			for i in range(len(lst)-1):
+				line_n += lst[i] + ","
+				pass
+			print("finally")
+			line_n = line_n[:-1] + "}"
+			print(line_n)
+			head = json.loads(line_n)
+			print(head)
 			L=int(head['length'])
 			pass
+		# break
 		X = np.loadtxt(file, skiprows=1)
 		print(X.shape)
 		print(X.shape[0])
@@ -68,5 +78,5 @@ def for_a_single_length(length):
 for L in range(100, 450, 50):
 	print("*********L=", L)
 	for_a_single_length(L)
-	break
+	
 	
